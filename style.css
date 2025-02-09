@@ -35,10 +35,7 @@ body {
 
 h1 {
     font-size: 5rem;
-    /* color: #8b5cf6; */
-    /* background: linear-gradient(135deg, #8b5cf6, #6366f1); */
     background: linear-gradient(to right, #fc72ff, #8f68ff, #487bff, #8f68ff, #fc72ff);
-    /* color: linear-gradient(135deg, #8b5cf6, #6366f1); */
     background-size: 200%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -70,7 +67,6 @@ h1 {
 #btn {
     width: 45vw;
     padding: 0.6rem;
-    /* background: linear-gradient(135deg, #8b5cf6, #6366f1); */
     background: linear-gradient(to right, #fc72ff, #8f68ff, #487bff, #8f68ff, #fc72ff);
     border: none;
     border-radius: 8px;
@@ -82,19 +78,10 @@ h1 {
     font-size: 1.3rem;
 
     background-size: 200%;
-    /* background-clip: text; */
-    /* -webkit-background-clip: text; */
-    /* color: transparent; */
     animation: animate-gradiant 3s linear infinite;
 }
 
-/* #btn:disabled {
-    background: #4a5568;
-    cursor: not-allowed;
-    opacity: 0.7;
-} */
-
-#btn:not(:disabled):hover {
+#btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4);
 }
