@@ -7,7 +7,6 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 
-# Ensures NLTK dependencies are downloaded
 nltk.download('punkt_tab')
 nltk.download("punkt")
 nltk.download("stopwords")
@@ -64,6 +63,3 @@ async def predict(email: EmailText):
     result = "Not Spam" if prediction == 0  else "Spam"
 
     return {"prediction": result}
-
-# Run FastAPI server with:
-# uvicorn app:app --host 127.0.0.1 --port 8000 --reload
