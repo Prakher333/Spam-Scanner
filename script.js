@@ -1,4 +1,5 @@
 document.getElementById("btn").addEventListener("click", async () => {
+    document.getElementById("result").innerHTML = ""
     let emailText = document.getElementById("emailText").value;
     if (!emailText.trim()) {
         alert("Please enter a message!");
